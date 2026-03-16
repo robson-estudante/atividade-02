@@ -1,19 +1,19 @@
-/* --- CONFIGURAÇÕES GERAIS --- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif; /* A fonte certinha do Figma */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 body {
     background-color: #FFFFFF;
     color: #202020;
     display: flex;
-    justify-content: center; /* Centraliza o container na tela */
+    justify-content: center; 
 }
 
-/* Essa caixa limita a largura para não esticar demais em monitores grandes */
+
 .container {
     width: 100%;
     max-width: 1100px; 
@@ -23,7 +23,7 @@ body {
     flex-direction: column;
 }
 
-/* --- CABEÇALHO --- */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -34,12 +34,12 @@ header {
 .logo {
     font-size: 28px;
     font-weight: 700;
-    color: #89C5CC; /* Cor base do logo */
+    color: #89C5CC; 
 }
 
 .destaque-logo {
     color: #89C5CC;
-    text-shadow: 2px 2px 0px rgba(137, 197, 204, 0.4); /* Sombra chapada */
+    text-shadow: 2px 2px 0px rgba(137, 197, 204, 0.4); 
 }
 
 nav ul {
@@ -60,9 +60,9 @@ nav a.ativo {
     font-weight: 600;
 }
 
-/* --- CONTEÚDO PRINCIPAL (HERO) --- */
+
 main {
-    flex-grow: 1; /* Empurra o rodapé lá pra baixo */
+    flex-grow: 1; 
     display: flex;
     align-items: center; 
 }
@@ -90,7 +90,7 @@ main {
 .destaque-titulo {
     font-weight: 700;
     color: #89C5CC;
-    text-shadow: 3px 3px 0px rgba(137, 197, 204, 0.4); /* Sombra do título */
+    text-shadow: 3px 3px 0px rgba(137, 197, 204, 0.4); 
 }
 
 .hero-texto p {
@@ -105,7 +105,7 @@ main {
     font-weight: 600;
 }
 
-/* --- BOTÃO WHATSAPP --- */
+
 .botao-whatsapp {
     display: inline-flex;
     align-items: center;
