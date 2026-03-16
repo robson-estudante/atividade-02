@@ -1,0 +1,156 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* A fonte certinha do Figma */
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #202020;
+    display: flex;
+    justify-content: center; /* Centraliza o container na tela */
+}
+
+/* Essa caixa limita a largura para não esticar demais em monitores grandes */
+.container {
+    width: 100%;
+    max-width: 1100px; 
+    padding: 0 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- CABEÇALHO --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #89C5CC; /* Cor base do logo */
+}
+
+.destaque-logo {
+    color: #89C5CC;
+    text-shadow: 2px 2px 0px rgba(137, 197, 204, 0.4); /* Sombra chapada */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #8A8A8A;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+nav a.ativo {
+    color: #202020;
+    font-weight: 600;
+}
+
+/* --- CONTEÚDO PRINCIPAL (HERO) --- */
+main {
+    flex-grow: 1; /* Empurra o rodapé lá pra baixo */
+    display: flex;
+    align-items: center; 
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.hero-texto {
+    max-width: 50%; 
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-weight: 400; 
+    color: #202020;
+}
+
+.destaque-titulo {
+    font-weight: 700;
+    color: #89C5CC;
+    text-shadow: 3px 3px 0px rgba(137, 197, 204, 0.4); /* Sombra do título */
+}
+
+.hero-texto p {
+    color: #7A7A7A;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.hero-texto strong {
+    color: #4A4A4A;
+    font-weight: 600;
+}
+
+/* --- BOTÃO WHATSAPP --- */
+.botao-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #69B99D; 
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(105, 185, 157, 0.4); 
+    transition: 0.3s;
+}
+
+.botao-whatsapp:hover {
+    background-color: #559981; 
+}
+
+.botao-whatsapp img {
+    width: 20px;
+}
+
+/* --- IMAGEM DA DIREITA --- */
+.hero-imagem {
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- RODAPÉ --- */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #202020;
+    font-size: 14px;
+}
+
+footer strong {
+    font-weight: 700;
+}
